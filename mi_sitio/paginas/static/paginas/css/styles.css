@@ -12,7 +12,7 @@ body {
 
 header {
   background-color: #111;
-  border-bottom: 2px dashed #00ff00;
+  border-bottom: 2px dashed #5ddd5d;
   padding: 20px;
   text-align: center;
 }
@@ -27,7 +27,7 @@ nav {
 }
 
 nav a {
-  color: #00ff00;
+  color: #048d04;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
@@ -46,7 +46,7 @@ main {
 
 footer {
   background-color: #111;
-  color: #00ff00;
+  color: #318a31;
   text-align: center;
   padding: 10px;
   border-top: 2px dashed #00ff00;
