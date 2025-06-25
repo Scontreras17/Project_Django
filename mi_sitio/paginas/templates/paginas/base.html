@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="{% static 'paginas/css/styles.css' %}" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+{% include 'paginas/footer.html' %}
+</head>
+<body>
+  <!-- Aquí va tu contenido -->
+    <header>
+        <h1>Mi sitio</h1>
+        <nav>
+        <ul>
+            <li><a href="{% url 'inicio' %}">Inicio</a></li>
+            <li><a href="{% url 'acerca' %}">Acerca de mí</a></li>
+            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+        </ul>
+        </nav>
+            </header> 
+
+{% block content %}
+  <main>
+    {% block main_content %}
+    <!-- Aquí va el contenido específico de cada página -->
+    {% endblock %}
+  </main>
+{% endblock %}
+</body>
+</html>

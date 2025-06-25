@@ -1,0 +1,15 @@
+{% extends 'paginas/base.html' %}
+
+{% block main_content %}
+<section class="about-container">
+  <div class="about-text">
+    <h1>Acerca de mí</h1>
+    <p>¡Hola! Soy Sebastián, un apasionado de la programación y el desarrollo web.</p>
+    <p>Tengo experiencia en Django, HTML, CSS y siempre estoy aprendiendo cosas nuevas.</p>
+    <a href="{% url 'contacto' %}" class="btn">Contáctame</a>
+  </div>
+  <div class="about-image">
+    <img src="https://i.pinimg.com/736x/53/d5/56/53d556c8c632f5f710206f2ea661daa7.jpg" alt="Foto de Sebastián" />
+  </div>
+</section>
+{% endblock %}
